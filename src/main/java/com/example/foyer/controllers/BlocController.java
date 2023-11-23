@@ -49,5 +49,6 @@ public class BlocController {
     @PatchMapping("/update/{idBloc}")
     public ResponseEntity<Bloc>partialUpdateBlocs(@PathVariable Long idBloc, @RequestBody Map<String, Object> updates){
         return blocService.partialUpdateBlocs(idBloc,updates);
+
     }
 }
